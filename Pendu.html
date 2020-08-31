@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/pendu.css?id=1234">
+    <title>Jeu du Pendu</title>
+</head>
+<h1 class="transparent text-">Le Jeu du Pendu</h1>
+
+<body id="body">
+    <div id="oModal" class="oModal">
+        <div>
+            <header>
+                <a href="#fermer" title="Fermer la fenêtre" class="droite">X</a>
+                <h2>Jeu du Pendu</h2>
+            </header>
+            <section>
+                <p id="message">FELICITATIONS VOUS AVEZ GAGNE !</p>
+            </section>
+            <footer class="cf">
+                <a href="#fermer" class="btn droite" id="close" title="Fermer la fenêtre">Fermer</a>
+
+            </footer>
+        </div>
+    </div>
+
+    <a href="#oModal" id="linkModal">Ouvrir le popup</a>
+
+    <main>
+        <div class="rules">
+            <h2>Régles</h2>
+            <ol type="1">
+                <li>Au chargement de la page, un <strong>mot de 7 lettres</strong> est choisi par le programme ;</li>
+                <li>Cliquez sur une "<strong>LETTRE</strong>" ;</li>
+                <li>Si votre lettre se trouve dans le mot, le programme l'inscrit à sa ou ses places en face de
+                    "<strong>RESULTAT</strong>" ;</li>
+                <li>Si votre lettre ne se trouve pas dans le mot, le programme ajoutera une pièce à la potence ;</li>
+                <li>Vous devez trouver le mot mystère en <strong>8 coups maximum</strong> ou vous serez pendu.</li>
+            </ol>
+        </div>
+        <div id="image" style="display: none;">
+            <img src="./assets/img/pendu1.png">
+        </div>
+    </main>
+    <form method="GET">
+        <div>
+            <h2>
+                Choisissez une lettre :
+            </h2>
+            <h2>
+                <div id="alphabet">
+                </div>
+                <br>
+                RESULTAT :
+                <label id="resultat">
+                    <input id="progress" type="text" disabled="true">
+                </label>
+            </h2>
+        </div>
+        <div>
+            <h3>Essais restants :
+                <span id="trialCount">8</span><a href="#" id="replay">REJOUER</a>
+            </h3>
+
+        </div>
+
+    </form>
+    <script type="text/javascript" src="./assets/js/pendu.js"></script>
+</body>
+
+</html>

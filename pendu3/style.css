@@ -1,0 +1,39 @@
+* {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.gallows {
+  white-space: pre;
+  color: brown;
+  font-weight: bold;
+}
+
+.keyboard {
+  width: 20rem;
+}
+
+.word {
+  letter-spacing: 0.5rem;
+}
+
+.keyboard button {
+  background-color: rgb(144, 144, 255);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+
+  margin: 0.5rem;
+  border-radius: 1.5rem;
+  transition: all 1s;
+}
+
+.keyboard button:disabled {
+  background-color: rgb(78, 78, 78);
+  color: rgb(163, 163, 163);
+}
+
+.hidden {
+  visibility: hidden;
+}
